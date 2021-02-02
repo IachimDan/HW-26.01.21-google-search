@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GOOGLE SEARCH FORM</title>
+        <link rel="icon" href="Google-Chrome-icon.png"/>
+    </head>
+    <body>
+        <h1>GOOGLE SEARCH FORM EXAMPLE</h1>
+        <img src="google.png" alt="chrome"/>
+
+        <!--
+            1.WHERE?
+                action="URL"
+            2. What?
+                name="???"
+            3. HOW?
+                method="GET/POST"
+
+                HTTP
+                    get, post, delete, put..
+        -->
+        
+        <form action="https://www.google.com/search?" target="_blank">
+            
+            <input type="text" 
+            size="50"
+            name="q"
+            required
+            pattern="[A-Za-z].{3,}" 
+            title="Three or more characters"
+            >
+            <!-- 
+                <select name="q">
+                <option value="">HTML Wiki</option>
+                <option value="">CSS Wiki</option>
+            </select>
+            -->
+            <br>
+            <br>
+            <button>Get Google</button>
+        </form>
+
+        <h1>GOOGLE SEARCH FORM EXAMPLE</h1>
+        <img src="google.png" alt="chrome"/>
+        <form action="https://www.google.com/search?" target="_blank">
+            
+            <textarea name="q" ></textarea>
+            <br>
+            <br>
+            <button>Get Google</button>
+        </form>
+
+        <h1>GOOGLE SEARCH FORM EXAMPLE</h1>
+        <img src="google.png" alt="chrome"/>
+        <form action="https://www.google.com/search?" target="_blank">
+            
+            Select: 
+            <br/>
+            <input type="radio" name="q" value="HTML Wiki"/>HTML Wiki <br/>
+            <input type="radio" name="q" value="CSS Wiki"/>CSS Wiki <br/>
+            <br>
+            <br>
+            <button>Get Google</button>
+        </form>
+        <!--
+            HW2: use <textarea>, input type radio>
+            HW3: use pattern, attribute
+                -a..z minimum 3 litere
+                sa fie obligatoriu litere din alfabet latin
+                fara(-,.овывф)
+        -->
+
+       <!-- 
+           <h2>YANDEX SEARCH FORM EXAMPLE</h2>
+        <form action="https://yandex.com/search/">
+            <input type="text" 
+            size="60"
+            name="text"
+            >
+            <button>Go Yandex !!!</button>
+        -->
+        <br>
+        <h2>YOUTUBE SEARCH FORM EXAMPLE</h2>
+        <img src="YouTube.png" alt="youtube"/>
+        <form action="https://www.youtube.com/results" target="_blank">
+            <input type="text" 
+            size="50"
+            name="q"
+            pattern="[A-Za-z].{3,}" 
+            title="Three or more characters"
+            >
+            <br>
+            <br>
+            <button>Search in YOUTUBE !!!</button>
+        </form>
+    </body>
+</html>
